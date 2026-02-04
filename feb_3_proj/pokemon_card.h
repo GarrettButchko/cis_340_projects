@@ -1,5 +1,6 @@
 #ifndef POKEMON_CARD_H
 #define POKEMON_CARD_H
+#include <stdbool.h>
 
 #define NAME_LEN 64
 #define TYPE_LEN 32
