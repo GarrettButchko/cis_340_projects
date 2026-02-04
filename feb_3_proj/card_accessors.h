@@ -1,3 +1,6 @@
+#ifndef CARD_ACCESSORS_H
+#define CARD_ACCESSORS_H
+
 #include "pokemon_card.h"
 
 void getName(const PokemonCard *card, char *outName);
@@ -11,3 +14,5 @@ void setHitPoints(PokemonCard *card, int hp);
 
 double getValue(const PokemonCard *card);
 void setValue(PokemonCard *card, double value);
+
+#endif /* CARD_ACCESSORS_H */

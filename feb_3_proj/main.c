@@ -16,6 +16,17 @@
 
 #define CARD_COUNT 3
 
+static void trim_newline(char *s);
+static void read_line(const char *prompt, char *out, size_t out_sz, bool requireWordOnly);
+static int is_valid_int_string(const char *s);
+static int is_valid_double_string(const char *s);
+static void getBuf(char *buf, size_t buf_sz, const char *prompt);
+static int read_int_atoi(const char *prompt);
+static double read_double_atof(const char *prompt);
+static void input_card(PokemonCard *c, int idx);
+static void print_cards_order1(const PokemonCard cards[], int n);
+static void print_cards_order2(const PokemonCard cards[], int n);
+
 /*
     main
     Arguments: none
@@ -291,5 +302,4 @@ static void print_cards_order2(const PokemonCard cards[], int n) {
                i + 1, cards[i].dollar_value, cards[i].hit_points, cards[i].name, cards[i].type);
     }
 }
-
 

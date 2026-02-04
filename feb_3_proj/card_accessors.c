@@ -1,5 +1,5 @@
 #include <string.h>
-#include "pokemon_card.h"
+#include "card_accessors.h"
 
 void getName(const PokemonCard *card, char *outName){
     if (card == NULL || outName == NULL){
@@ -21,8 +21,8 @@ void getType(const PokemonCard *card, char *outType){
     if (card == NULL || outType == NULL){
         return;
     } else {}
-    strncpy(outType, card->type, NAME_LEN - 1);
-    outType[NAME_LEN - 1] = '\0';
+    strncpy(outType, card->type, TYPE_LEN - 1);
+    outType[TYPE_LEN - 1] = '\0';
 }
 
 void setType(PokemonCard *card, const char *newType){
@@ -30,8 +30,8 @@ void setType(PokemonCard *card, const char *newType){
         return;
     } else {}
 
-    strncpy(card->name, newType, NAME_LEN - 1);
-    card->type[NAME_LEN - 1] = '\0';
+    strncpy(card->type, newType, TYPE_LEN - 1);
+    card->type[TYPE_LEN - 1] = '\0';
 }
 
 int getHitPoints(const PokemonCard *card){
