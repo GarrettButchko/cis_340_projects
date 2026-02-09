@@ -1,0 +1,2 @@
+Pikachu|Electric|35|3.99|EXTRA
+Raichu|Electric|60|4.50

@@ -1,0 +1,6 @@
+Bulbasaur|Grass|45|2.50
+BadNoDelims
+Squirtle|Water|-44|2.50
+Charmander|Fire|39|1.75
+Mewtwo|Psychic|130|abc
+|MissingName|10|1.00
