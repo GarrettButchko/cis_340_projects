@@ -11,4 +11,10 @@ typedef struct {
     double dollar_value;
 } PokemonCard;
 
+/*
+    RecordStructure
+    Transformation: Compatibility typedef required by assignment-provided signatures.
+*/
+typedef PokemonCard RecordStructure;
+
 #endif /* POKEMON_CARD_H */
